@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'Sans-serif';
+  background-color: #00b36b;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-size: 50px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+.accordion_box {
+  border-radius: 10px;
+  background: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.accordion_header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  background: rgb(243, 243, 243);
+}
+
+.accordion_content.active {
+  max-height: 0;
+  overflow: hidden;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  transition: all 3s ease;
+}
+
+.accordion_content.active {
+  /* display: block; 
+  height: 300px; */
+}
+
+.accordion_content p {
+  padding: .5rem;
+  background: white;
+  color: rgb(63, 63, 63);
+  font-weight: 66;
+}
+
+.icons .fas.fa-plus {
+  transition: transform .4s ease-out;
+}
+
+.icons .fas.fa-plus.active {
+  transform: rotate(180deg);
+  display: none;
+}
+
+
+
+.icons .fas.fa-minus {
+  display: none;
+}
+
+.icons .fas.fa-minus.active {
+  display: flex;
+}
