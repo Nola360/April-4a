@@ -14,7 +14,7 @@ body {
 h1 {
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 100px;
   font-size: 50px;
 }
 
@@ -28,7 +28,7 @@ h1 {
 
 .accordion_box {
   border-radius: 10px;
-  background: red;
+  /* background: red; */
   padding: 10px;
   border-radius: 10px;
 }
@@ -50,8 +50,8 @@ h1 {
 }
 
 .accordion_content.active {
-  /* display: block; 
-  height: 300px; */
+  display: block; 
+  height: 300px;
 }
 
 .accordion_content p {
@@ -59,14 +59,17 @@ h1 {
   background: white;
   color: rgb(63, 63, 63);
   font-weight: 66;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .icons .fas.fa-plus {
+  transform: rotate(180deg);
   transition: transform .4s ease-out;
 }
 
 .icons .fas.fa-plus.active {
-  transform: rotate(180deg);
+  
   display: none;
 }
 
