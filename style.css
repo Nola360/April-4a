@@ -23,6 +23,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  /* height: 100%; */
  
 }
 
@@ -31,6 +32,8 @@ h1 {
   /* background: red; */
   padding: 10px;
   border-radius: 10px;
+  /* height: 100%; */
+  /* background: red; */
 }
 
 .accordion_header {
@@ -41,17 +44,21 @@ h1 {
   background: rgb(243, 243, 243);
 }
 
-.accordion_content.active {
-  max-height: 0;
+
+
+.accordion_content {
+  height: 0;
   overflow: hidden;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  transition: all 3s ease;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
+  transition: all .3s ease;
 }
 
 .accordion_content.active {
-  display: block; 
-  height: 300px;
+  height: 70px;
+  /* min-height: 300px; */
+  /* max-height: 0;
+  overflow: hidden; */
 }
 
 .accordion_content p {
